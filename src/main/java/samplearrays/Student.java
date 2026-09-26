@@ -1,6 +1,6 @@
 package samplearrays;
 
-class Student {
+public class Student {
     private int id;
     private String name;
     private int age;
@@ -17,10 +17,12 @@ class Student {
     public Student(int id, String name, int age) {
         this(id, name);
         this.age = age;
+        numStudent++;
     }
     public Student(int id, String name, int age, int grade) {
         this(id, name, age);
         this.grade = grade;
+        numStudent++;
     }
 
     // Getters / setters
